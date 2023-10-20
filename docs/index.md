@@ -1,69 +1,88 @@
-# Contributing to MicrosoftDevBox
+# Microsoft DevBox Demo for Contoso
 
-Thank you for your interest in contributing to MicrosoftDevBox! We value and appreciate your effort, whether you're fixing bugs, adding new features, or even improving our documentation. This document is a set of guidelines for contributing to MicrosoftDevBox hosted on [GitHub](https://github.com/Evilazaro/MicrosoftDevBox).
+Welcome to the Microsoft DevBox demo repository! This project aims to simulate a company named "Contoso" that leverages Microsoft DevBox for provisioning workstations to its engineers.
 
 ## Table of Contents
 
-1. [Code of Conduct](#code-of-conduct)
-2. [Getting Started](#getting-started)
-3. [How to Contribute](#how-to-contribute)
-4. [Style Guide](#style-guide)
-5. [Commit Messages](#commit-messages)
-6. [Pull Request Process](#pull-request-process)
-7. [Additional Notes](#additional-notes)
+- [Description](#description)
+- [Pre-Requisites](#pre-requisites)
+- [Architecture](#architecture)
+- [Projects](#projects)
+- [How to Use the Scripts](#how-to-use-the-scripts)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code of Conduct
+## Description
 
-By participating in this project, you are expected to uphold our [Code of Conduct](CODE_OF_CONDUCT.md). Please ensure you read and understand its contents.
+Contoso is a fictitious company utilizing Microsoft's DevBox to streamline the deployment of development environments. This repository offers a real-world simulation to demonstrate the capabilities of DevBox in a practical setting.
 
-## Getting Started
+## Pre-Requisites
 
-* Fork the [repository](https://github.com/Evilazaro/MicrosoftDevBox) on GitHub.
-* Clone the forked repository to your local machine.
-* Set up the required development environment.
-* Check out the [issues](https://github.com/Evilazaro/MicrosoftDevBox/issues) to see what we need help with.
+Before you delve into the project, ensure you have:
 
-## How to Contribute
+### 1. Environment
+- The script should be executed on a Unix-like operating system with a Bash shell.
+  
+### 2. Required Software:
+- **Azure CLI**: The script uses the Azure Command-Line Interface (`az`) for many of its operations. Ensure that you have the Azure CLI installed and updated to the latest version. You can check its installation with `az --version`.
 
-1. **Find an Issue** - Look for open issues or create your own issue. This helps avoid duplicating efforts as someone else might be working on the same issue.
-2. **Fork & Clone** - Fork the repo and then clone your fork. This is essential for you to make and test your changes.
-3. **Branch** - Create a new branch based on `main` (or whatever is the primary development branch). Please use a descriptive name for your branch.
-4. **Make Changes** - Make your changes and ensure you stick to the [Style Guide](#style-guide).
-5. **Test** - Ensure your changes do not break any existing functionality. Add new tests if necessary.
-6. **Commit** - Use descriptive commit messages and follow the [Commit Messages](#commit-messages) guidelines.
-7. **Push & Pull Request** - Push your changes to your forked repository and then submit a Pull Request with a detailed description of the changes.
+### 3. Required Permissions:
+- **Azure Subscription Access**: The user executing this script must have sufficient permissions on the target Azure subscription. This includes permissions for creating resource groups, deploying resources, and managing Azure AD identities.
 
-## Style Guide
+### 4. Required Directory Structure:
+The script assumes the existence of several other scripts in a specific directory structure. Ensure these scripts exist and are executable:
+  
+- `./identity/login.sh`
+- `./identity/createIdentity.sh`
+- `./identity/registerFeatures.sh`
+- `./identity/createUserAssignedManagedIdentity.sh`
+- `./network/deployVnet.sh`
+- `./network/createNetWorkConnection.sh`
+- `./devBox/computeGallery/deployComputeGallery.sh`
+- `./devBox/devCenter/deployDevCenter.sh`
+- `./devBox/devCenter/createDevCenterProject.sh`
+- `./devBox/computeGallery/createVMImageTemplate.sh`
+- `./devBox/devCenter/createDevBoxDefinition.sh`
 
-* Ensure your code respects the existing coding style.
-* Comment your code. Especially when using non-trivial solutions.
-* If the project uses linting or a formatter, make sure your changes do not produce any warnings.
+### 5. Configuration:
+- **Variables**: At the beginning of the script, several variables are defined (like `branch`, `location`, etc.). Review and adjust these values if necessary to match your Azure environment and naming conventions.
 
-## Commit Messages
+## Architecture
 
-* Use the present tense ("Add feature" not "Added feature").
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...").
-* Start the commit message with an applicable emoji:
-    * 🎉 Initial commit
-    * 🐛 Fixing a bug
-    * ✨ New feature
-    * 📝 Documentation changes
-    * ... (you can expand based on your needs)
+Provide a brief description or diagram about the architecture. Consider using diagrams or flowcharts to better illustrate the architecture. Add the link or embed the image here.
 
-## Pull Request Process
+## Projects
 
-1. Ensure your PR has a descriptive name.
-2. Add a comprehensive description detailing what changes you've made.
-3. Reference the issue(s) your PR solves.
-4. Ensure all checks and tests pass.
-5. A maintainer will review and potentially suggest changes. Work on these changes, and push them to your fork.
-6. Once approved, a maintainer will merge your PR.
+This repository is structured around multiple projects:
 
-## Additional Notes
+1. **eShop** - Brief description about eShop
+2. **Contoso** - Brief description about Contoso
+3. **Fabrikam** - Brief description about Fabrikam
+4. **TailWind** - Brief description about TailWind
 
-* For major changes or features, please open an issue first to discuss your idea.
-* If you have questions or need help, reach out to the maintainers or the community.
+## How to Use the Scripts
+
+To effectively utilize the scripts contained in this repository:
+
+1. **Step 1** - Description of the first step
+2. **Step 2** - Description of the second step
+3. ...
+
+> Remember to replace placeholders with actual steps and relevant commands.
+
+## Contributing
+
+We welcome contributions! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make the desired changes or enhancements in your branch.
+4. Submit a pull request for review.
+
+## License
+
+This project is open-source, licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for making MicrosoftDevBox better! We appreciate your time and effort.
+For any queries or feedback, please open an issue or contact the maintainers. Happy coding! 🚀
