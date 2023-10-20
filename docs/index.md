@@ -4,7 +4,8 @@ Welcome to the Microsoft DevBox demo repository! This project aims to simulate a
 
 ## Table of Contents
 
-- [Description](#description)
+- [Microsoft Dev Box](#microsoft-dev-box)
+- [Microsoft Dev Box for Contoso](#microsoft-devbox-for-contoso)
 - [Pre-Requisites](#pre-requisites)
 - [Architecture](#architecture)
 - [Projects](#projects)
@@ -12,7 +13,23 @@ Welcome to the Microsoft DevBox demo repository! This project aims to simulate a
 - [Contributing](#contributing)
 - [License](#license)
 
-## Description
+## Microsoft Dev Box
+
+Microsoft Dev Box gives you self-service access to high-performance, preconfigured, and ready-to-code cloud-based workstations called dev boxes. You can set up dev boxes with tools, source code, and prebuilt binaries that are specific to a project, so developers can immediately start work. If you're a developer, you can use dev boxes in your day-to-day workflows.
+
+The Dev Box service was designed with three organizational roles in mind: platform engineers, developer team leads, and developers.
+
+![Diagram that shows roles and responsibilities for dev boxes.](https://learn.microsoft.com/en-us/azure/dev-box/media/overview-what-is-microsoft-dev-box/dev-box-roles.png)
+
+Platform engineers and IT admins work together to provide developer infrastructure and tools to the developer teams. Platform engineers set and manage security settings, network configurations, and organizational policies to ensure that dev boxes can access resources securely.
+
+Developer team leads are experienced developers who have in-depth knowledge of their projects. They can be assigned the DevCenter Project Admin role and assist with creating and managing the developer experience. Project admins create and manage pools of dev boxes.
+
+Members of a development team are assigned the DevCenter Dev Box User role. They can then self-serve one or more dev boxes on demand from the dev box pools that have been enabled for a project. Dev box users can work on multiple projects or tasks by creating multiple dev boxes.
+
+Microsoft Dev Box bridges the gap between development teams and IT, by bringing control of project resources closer to the development team.
+
+## Microsoft DevBox for Contoso
 
 Contoso is a fictitious company utilizing Microsoft's DevBox to streamline the deployment of development environments. This repository offers a real-world simulation to demonstrate the capabilities of DevBox in a practical setting.
 
@@ -20,7 +37,7 @@ Contoso is a fictitious company utilizing Microsoft's DevBox to streamline the d
 
 Before you delve into the project, ensure you have:
 
-## 1. Environment
+### 1. Environment
 - This script should be executed within a Bash shell environment.
 
 ### Required Software:
